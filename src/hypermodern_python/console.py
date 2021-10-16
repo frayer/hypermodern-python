@@ -4,6 +4,7 @@ import click
 
 from . import __version__, wikipedia
 
+
 @click.command()
 @click.version_option(version=__version__)
 def main():
