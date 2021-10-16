@@ -1,1 +1,5 @@
+*.swp
+.coverage
+
 .devcontainer
+__pycache__

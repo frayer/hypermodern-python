@@ -16,6 +16,22 @@ python = "^3.9"
 click = "^8.0.3"
 requests = "^2.26.0"
 
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+coverage = {extras = ["toml"], version = "^6.0.2"}
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.6.1"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_python"]
+
+[tool.coverage.report]
+show_missing = true
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
